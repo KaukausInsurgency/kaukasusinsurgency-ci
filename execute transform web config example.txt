@@ -1,0 +1,1 @@
+C:\Users\david\Documents\GitHub\kaukasusinsurgency-ci\transform-web-config.ps1 -secretpath "C:\Users\david\Documents\Secrets\ki-local-config.xml" -webconfigpath "C:\Users\david\Documents\GitHub\kaukasusinsurgency-api\WebApp\KIWebApp\Test.Web.config" -extraproperties @{ CLIENT_VERSION_GUID = 'AAA-NNN'; CLIENT_VERSION = '0.90' }
