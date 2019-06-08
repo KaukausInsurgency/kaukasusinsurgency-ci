@@ -1,0 +1,1 @@
+ContourCLI.bat transform -p CIKITEST -d "C:\CI\kitest-vars.txt" -t "C:\Users\Administrator\Documents\KIv0.9\JenkinsEnvVars.Template.txt"
