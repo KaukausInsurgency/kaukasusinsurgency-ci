@@ -1,0 +1,1 @@
+"C:\Users\david\Documents\GitHub\TCPClient\KITCPClient\bin\Debug\KITCPClient.exe" "C:\Users\david\Documents\GitHub\TCPClient\KITCPClient\bin\Debug\Script.txt" 158.69.193.117 9985
