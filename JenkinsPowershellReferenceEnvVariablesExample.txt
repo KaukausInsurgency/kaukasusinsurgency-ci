@@ -1,0 +1,1 @@
+& "$($env:WORKSPACE)/WebApp/KIWebApp/build/transform-web-config.ps1" "C:/CI/Secrets/ki_v09.xml" "$($env:WORKSPACE)/WebApp/KIWebApp/web.Release.config" @{CLIENT_VERSION = "0.9.$($env:BUILD_NUMBER)";CLIENT_VERSION_GUID = "AAA-BBB-CCC-$($env:BUILD_NUMBER)"}
