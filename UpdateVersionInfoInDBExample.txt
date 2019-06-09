@@ -1,0 +1,7 @@
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& {[guid]::NewGuid().toString()}">>"%WORKSPACE%\GUID.txt"
+echo %APP_VERSION%.%BUILD_ID%>>"%WORKSPACE%\Version.txt"
+set /p guid= < "%WORKSPACE%\GUID.txt"
+set /p version= < "%WORKSPACE%\Version.txt"
+echo %version%>>"%WORKSPACE%\Meta.txt"
+echo %guid%>>"%WORKSPACE%\Meta.txt"
+"%MYSQL%" -u%MYSQL_JOB_USER% -p%MYSQL_JOB_PASSWORD% -e "update %MYSQL_DB_NAME%.meta set dcs_client_version='%version%', dcs_client_guid='%guid%'"
